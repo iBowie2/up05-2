@@ -55,3 +55,18 @@ b,
 
 .button:active {
 }
+
+header > ul {
+	list-style: none;
+	display: inline-flex;
+}
+
+header > ul > li {
+	margin: 10px;
+}
+
+header > ul > li > a {
+	color: var(--text-color);
+	text-decoration: none;
+	font-weight: bold;
+}

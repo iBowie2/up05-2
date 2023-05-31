@@ -1,3 +1,26 @@
 .main {
 	max-width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.goods-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.goods-container > a {
+	margin: 10px;
+}
+
+@media (max-width: 768px) {
+	.goods-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 378px) {
+	.goods-container {
+		grid-template-columns: 1fr;
+	}
 }
