@@ -5,6 +5,7 @@ var regularBuyCost = document.getElementById('regularBuyCost');
 
 var costPerKg = 250;
 var discountRegular = -100;
+var deliveryCost = 250;
 
 function addAmount(amount)
 {
@@ -19,7 +20,7 @@ function recalculate()
     var selectedSubType = document.querySelector('input[name="subtype"]:checked').value;
     var count = Number(numberbox.value);
 
-    singleBuyCost.innerHTML = (costPerKg * selectedVolume * count) + " ₽";
+    singleBuyCost.innerHTML = (costPerKg * selectedVolume * count + deliveryCost) + " ₽";
     regularBuyCost.innerHTML = (costPerKg * selectedVolume * count + discountRegular) + " ₽";
 
     if (selectedSubType == 'once')
