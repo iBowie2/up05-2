@@ -4,6 +4,14 @@
 	margin-right: 10%;
 }
 
+footer,
+header
+{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 .goods-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;

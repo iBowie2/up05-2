@@ -18,7 +18,14 @@
 	--primary-color: #015fff;
 	--primary-color-20: #015fff20;
 
+	--outline-color: #DADBDE;
+
 	--icon-ratio: 17.544%;
+}
+
+.text-color-focus
+{
+	color: var(--text-color-focus);
 }
 
 html,
@@ -56,6 +63,29 @@ b,
 .button:active {
 }
 
+.number
+{
+	color: var(--primary-color);
+	background-color: var(--accent-color);
+	padding: 8px;
+	width: 20px;
+	border-radius: 32px;
+	position: relative;
+	left: 50%;
+	margin-left: -18px;
+}
+
+.tab
+{
+	padding: 8px;
+	margin: 8px 12px 8px 0px;
+}
+
+.selected-tab {
+	background-color: var(--primary-color-20);
+	color: var(--primary-color);
+}
+
 header > ul {
 	list-style: none;
 	display: inline-flex;
@@ -69,4 +99,100 @@ header > ul > li > a {
 	color: var(--text-color);
 	text-decoration: none;
 	font-weight: bold;
+}
+
+footer
+{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 64px 0px 64px 0px;
+}
+
+footer > span
+{
+	text-align: left;
+}
+
+footer > a
+{
+	text-align: right;
+}
+
+footer > div > *
+{
+	margin: 8px;
+}
+
+.blueback
+{
+	background-color: var(--primary-color);
+	border-radius: 64px;
+}
+
+.subtype{
+	padding: 16px;
+	border: solid var(--outline-color) 1px;
+	border-radius: 8px;
+	margin-right: 8px;
+}
+
+.volume
+{
+	padding: 4px;
+	border: solid var(--outline-color) 1px;
+	border-radius: 8px;
+	margin-right: 8px;
+}
+
+.overlay
+{
+	position: relative;
+	top: -96px;
+	background-color: var(--background-color);
+	border: solid var(--outline-color) 2px;
+	border-radius: 4px;
+	margin: 16px;
+	padding: 16px;
+	font-family: 'Inter-Bold';
+	color: var(--text-color);
+}
+
+.finalform{
+	background-color: var(--outline-color);
+	border-radius: 64px;
+	padding: 128px;
+	text-align: center;
+}
+
+.finalform > p
+{
+	text-align: justify;
+}
+
+.finalform > form
+{
+	text-align: left;
+}
+
+.finalform > form > input[type="email"],
+.finalform > form > input[type="tel"],
+.finalform > form > input[type="text"]
+{
+	padding: 8px;
+	border-radius: 4px;
+	background-color: var(--outline-color);
+	color: var(--text-color);
+	margin: 8px 0px;
+	width: 100%;
+}
+
+.finalform > form > div
+{
+	margin: 8px 0px;
+}
+
+.finalform > form > div > *
+{
+	margin: 8px 0px;
 }
